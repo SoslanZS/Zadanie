@@ -1,0 +1,10 @@
+.container
+{
+	max-width: $widescreen;
+	width: 100%;
+	min-width: 375px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	padding:0 10px;
+}

@@ -1,0 +1,40 @@
+/* mixins */
+@import 'base/mixins.scss';
+
+/* base */
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/normalize';
+@import 'base/typography';
+@import 'base/default';
+@import 'base/prettify';
+
+/* blocks */
+@import 'blocks/footer/footer';
+@import 'blocks/header/header';
+@import 'blocks/slider/slider';
+@import 'blocks/receipts/receipts';
+@import 'blocks/email/email';
+@import 'blocks/ready_arrivalse/ready_arrivalse';
+@import 'blocks/our_capabilities/our_capabilities';
+@import 'blocks/news/news';
+/* pages */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+	&:before,
+	&:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+html
+{
+	line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+	-webkit-font-smoothing: antialiased;
+}

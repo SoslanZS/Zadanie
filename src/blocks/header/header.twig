@@ -1,0 +1,95 @@
+<header>
+	<div class="header container">
+		<section class="header__block__top">
+			<div class="header__navigation">
+				<ul class="header__navigation-list">
+					<li>
+						<a href="#" class="header__link">
+							{% include "assets/svg/location-icon.svg"%}Москва
+						</a>
+					</li>
+					<li>
+						<a href="#" class="header__link">
+							{% include "assets/svg/box-icon.svg"%}Доставка и оплата
+						</a>
+					</li>
+					<li>
+						<a href="#" class="header__link">
+							{% include "assets/svg/address-icon.svg"%}Адрес и часы работы
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header__contact">
+				<ul class="header__contact-list">
+					<li>
+						<a href="#" class="header__link">
+							{% include "assets/svg/mail-icon.svg" %}market@estatut.ru
+						</a>
+					</li>
+					<li>
+						<a href="#" class="header__link">
+							{% include "assets/svg/devices-icon.svg" %}
+							8 (968) 660-65-50
+							{% include "assets/svg/interface-icon.svg"%}
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<div class="header__line"></div>
+
+		<section class="header__block__bottom">
+			<div class="header__block-content">
+				<div class="header__block-search">
+					<a class="header__burger none">
+						{% include "assets/svg/burger.svg" %}
+					</a>
+					<div class="header__logo">
+						{% include "assets/svg/logo.svg" %}
+					</div>
+					<input type="search" class="header__input" placeholder="Что будем искать?">
+					<button class="header__button">
+						{% include "assets/svg/magnifier-icon.svg" %}
+						{% include "assets/svg/magnifier-white.svg" %}
+						<span>Искать</span>
+					</button>
+				</div>
+				<div class="header__user-content">
+					<ul class="header__user-list">
+						<li>
+							<a href="#" class="header__user-link">
+								{% include "assets/svg/shortcut-icon.svg" %}Отложено
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header__user-link">
+								{% include "assets/svg/smile-icon.svg" %}Войти
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header__user-link">
+								<sapn class="header__basket">
+								{% include "assets/svg/basket-icon.svg" %}
+								</sapn>Корзина
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="header__menu">
+				<div class="header__burger">{% include "assets/svg/burger.svg" %}</div>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Авторы</a></li>
+				<li><a href="#">Новинки</a></li>
+				<li class="header__menu-sale">
+					{% include "assets/svg/sale-icon.svg" %}
+					<a href="#">Скидки</a>
+				</li>
+				<li><a href="#">Партнёрам</a></li>
+				<li><a href="#">Мы</a></li>
+			</nav>
+		</section>
+	</div>
+</header>

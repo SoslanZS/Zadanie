@@ -1,0 +1,127 @@
+.email
+{
+	position: relative;
+	z-index: -2;
+	width: 355px;
+	height: 190px;
+	margin: auto;
+	margin-bottom: 10px;
+	padding: 20px 10px;
+	background-color: #0288D1;
+	border-radius: 5px;
+}
+
+.email__header
+{
+	margin-bottom: 10px;
+	padding-right: 99px;
+
+	h2
+	{
+		font-family: Roboto;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 25px;
+		color: #fff;
+	}
+
+	span{position: relative;}
+
+	span::before
+	{
+		content: '';
+		position: absolute;
+		top: -4px;
+		left: -11px;
+		width: 68px;
+		height: 28px;
+		z-index: -1;
+		background-image: url("img/tape.png");
+	}
+}
+
+.email__input
+{
+	width: 335px;
+	height: 40px;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	border: none;
+	border-radius: 5px;
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.email__btn
+{
+	width: 335px;
+	height: 40px;
+	border: 1px solid #FFFFFF;
+	border-radius: 5px;
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+}
+
+@media (min-width: 768px)
+{
+	.email
+	{
+		display: flex;
+		align-items: center;
+		width: 748px;
+		height: 80px;
+		margin: auto;
+		padding: 0 10px;
+	}
+
+	.email__header
+	{
+		padding: 0;
+		margin: 0;
+
+		h2{display: inline-block;}
+	}
+
+	.email__input
+	{
+		width: 300px;
+		margin: 0;
+		margin-right: 10px;
+	}
+
+	.email__btn{width: 120px;}
+}
+
+@media (min-width: 1336px)
+{
+	.email
+	{
+		width: 1140px;
+		height: 105px;
+		margin-bottom: 30px;
+		padding: 32px 44px 33px 45px;
+	}
+
+	.email__header
+	{
+		margin-top: 8px;
+		margin-right: 15px;
+		span::before{top: -3px;}
+	}
+
+	.email__input
+	{
+		width: 418px;
+		height: 40px;
+		margin-right: 10px;
+	}
+	.email__btn
+	{
+		width: 137px;
+		height: 40px;
+	}
+}
