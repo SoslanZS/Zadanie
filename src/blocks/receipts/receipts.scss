@@ -4,7 +4,6 @@
 	margin: auto;
 	margin-bottom: 10px;
 }
-
 .receipts__book-container:nth-child(2),
 .receipts__book-container:nth-child(3){display: none;}
 
@@ -24,14 +23,12 @@
 	margin: 0;
 	}
 }
-
 .receipts__arrow
 {
 	display: flex;
 	width: 61px;
 	height: 30px;
 }
-
 .receipts__arrow-left,
 .receipts__arrow-right
 {
@@ -42,7 +39,6 @@
 	height: 100%;
 	border: 1px solid rgba(28, 41, 77, 0.15);
 }
-
 .receipts__arrow-left
 {
 	border-right: none;
@@ -51,7 +47,6 @@
  	svg:first-child{transform: rotate(180deg);}
 }
 .receipts__arrow-right{border-radius: 0 5px 5px 0;}
-
 .receipts__books{display: flex;}
 
 .receipts__book
@@ -62,7 +57,6 @@
 	border-top: 1px solid #DDDEF4;
 	border-bottom: 1px solid #DDDEF4;
 }
-
 .receipts__book-container:not(:last-child){border-right: 1px solid #DDDEF4;}
 
 .receipts__book-status
@@ -86,7 +80,6 @@
 		color: #AC8EE3;
 	}
 }
-
 .receipts__book-stock
 {
 	position: absolute;
@@ -108,7 +101,6 @@
 		color: #FF4F52;
 	}
 }
-
 .receipts__book-img
 {
 	margin: auto;
@@ -122,7 +114,6 @@
 		height: 100%;
 	}
 }
-
 .receipts__info-book
 {
 	margin: auto;
@@ -167,8 +158,6 @@
 		color: #1C294D;
 	}
 }
-
-
 .receipts__rating
 {
 	margin-bottom: 10px;
@@ -198,7 +187,6 @@
 		color: #FBC02D;
 	}
 }
-
 .receipts__recommendation
 {
 	display: flex;
@@ -218,11 +206,9 @@
 		font-size: 12px;
 	}
 }
-
 .receipts__book-container:last-child
 {
 	.receipts__recommendation{display: none;}
-
 	.receipts__rating{margin-bottom: 43px;}
 }
 .receipts__price-book
@@ -232,7 +218,6 @@
 	margin: 0 auto;
 	justify-content: space-between;
 }
-
 .receipts__in-garbage
 {
 	display: flex;
@@ -258,7 +243,6 @@
 		font-size: 14px;
 	}
 }
-
 .receipts__bookmark
 {
 	display: flex;
@@ -275,7 +259,6 @@
 		margin-right: 11px;
 	}
 }
-
 .receipts__more-books
 {
 	height: 40px;
@@ -291,20 +274,15 @@
 	}
 }
 
-
-
-
 @media (min-width: 768px)
 {
 	.receipts{width: 748px;}
-
 	.receipts__book{width: 185px;}
 
 	.receipts__book-container:nth-child(2),
 	.receipts__book-container:nth-child(3){display: block;}
 
 	.receipts__book-container:not(:last-child){border-right: 1px solid #DDDEF4;}
-
 	.receipts__book-news
 	{
 		position: absolute;
@@ -327,7 +305,6 @@
 			color: #3DC47E;
 		}
 	}
-
 	.receipts__sale
 	{
 		display: flex;
@@ -378,10 +355,6 @@
 	}
 }
 
-
-
-
-
 @media (min-width: 1366px)
 {
 	.receipts
@@ -389,9 +362,7 @@
 		width: 1140px;
 		margin-bottom: 30px;
 	}
-
 	.receipts__heading{padding: 0 25px;}
-
 	.receipts__book-container:last-child{width: 276px;}
 
 	.receipts__book:nth-child(2),
@@ -403,7 +374,6 @@
 		border-top: 1px solid #DDDEF4;
 		border-bottom: 1px solid #DDDEF4;
 	}
-
 	.receipts__book
 	{
 		width: 263px;
@@ -411,7 +381,6 @@
 		padding: 25px 20px 21px;
 		border: none;
 	}
-
 	.receipts__book-img{margin: 0;}
 
 	.receipts__info-book
@@ -424,26 +393,22 @@
 
 		p:nth-child(3){letter-spacing: -0.1px}
 	}
-
 	.receipts__rating
 	{
 		display: flex;
 		padding: 0;
 		margin-bottom: 12px;
 	}
-
 	.receipts__star
 	{
 		margin: 0;
 		margin-right: 10px;
 	}
-
 	.receipts__price-book
 	{
 		width: 196px;
 		margin: 0;
 	}
-
 	.receipts__in-garbage
 	{
 		width: 145px;
@@ -457,7 +422,6 @@
 
 		p{margin: 0;}
 	}
-
 	.receipts__bookmark
 	{
 		width: 40px;
@@ -465,7 +429,6 @@
 
 		svg{margin-left: 14px;}
 	}
-
 	.receipts__book-container:first-child
 	{
 		.receipts__book{padding: 25px 13px 21px;}
@@ -476,13 +439,11 @@
 			left: 13px;
 			padding: 4px;
 		}
-
 		.receipts__book-stock
 		{
 			top: 55px;
 			left: 13px;
 		}
-
 		.receipts__book-img
 		{
 			width: 140px;
@@ -490,10 +451,8 @@
 			margin-left: 41px;
 			margin-bottom: 14px;
 		}
-
 		.receipts__info-book{margin-bottom: 6px;}
 	}
-
 	.receipts__book-container:nth-child(2)
 	{
 		width: 292px;
@@ -505,21 +464,16 @@
 			margin-left: 47px;
 			margin-bottom: 13px;
 		}
-
 		.receipts__book-news
 		{
 			top: 20px;
 			left: 20px;
 			padding: 4px;
 		}
-
 		.receipts__info-book{margin-bottom: 7px;}
-
 		.receipts__in-garbage svg{margin-left: 25.67px;}
-
 		.receipts__star{margin-right: 10px;}
 	}
-
 	.receipts__book-container:nth-child(3)
 	{
 		width: 293px;
@@ -531,21 +485,18 @@
 			margin-left: 37px;
 			margin-bottom: 13px;
 		}
-
 		.receipts__book-news
 		{
 			top: 20px;
 			left: 20px;
 			padding: 4px;
 		}
-
 		.receipts__info-book
 		{
 			margin-bottom: 5px;
 
 			p:nth-child(3){letter-spacing: -0.1px;}
 		}
-
 		.receipts__sale
 		{
 			p:first-child
@@ -569,7 +520,6 @@
 			}
 		}
 	}
-
 	.receipts__book-container:last-child
 	{
 		.receipts__book{padding-left: 28px;}
@@ -580,13 +530,11 @@
 			left: 28px;
 			padding: 4px;
 		}
-
 		.receipts__book-stock
 		{
 			top: 55px;
 			left: 28px;
 		}
-
 		.receipts__book-img
 		{
 			width: 140px;
@@ -594,11 +542,8 @@
 			margin-left: 41px;
 			margin-bottom: 14px;
 		}
-
 		.receipts__info-book{margin-bottom: 6px;}
-
 		.receipts__rating{margin-bottom: 12px;}
-
 		.receipts__recommendation{display: flex;}
 	}
 }

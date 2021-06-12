@@ -10,7 +10,6 @@
 	background-color: #0288D1;
 	border-radius: 5px;
 }
-
 .email__header
 {
 	margin-bottom: 10px;
@@ -39,7 +38,6 @@
 		background-image: url("img/tape.png");
 	}
 }
-
 .email__input
 {
 	width: 335px;
@@ -52,7 +50,6 @@
 	font-weight: normal;
 	font-size: 14px;
 }
-
 .email__btn
 {
 	width: 335px;
@@ -77,7 +74,6 @@
 		margin: auto;
 		padding: 0 10px;
 	}
-
 	.email__header
 	{
 		padding: 0;
@@ -85,14 +81,12 @@
 
 		h2{display: inline-block;}
 	}
-
 	.email__input
 	{
 		width: 300px;
 		margin: 0;
 		margin-right: 10px;
 	}
-
 	.email__btn{width: 120px;}
 }
 
@@ -105,14 +99,12 @@
 		margin-bottom: 30px;
 		padding: 32px 44px 33px 45px;
 	}
-
 	.email__header
 	{
 		margin-top: 8px;
 		margin-right: 15px;
 		span::before{top: -3px;}
 	}
-
 	.email__input
 	{
 		width: 418px;

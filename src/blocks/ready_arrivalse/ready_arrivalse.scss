@@ -4,7 +4,6 @@
 	margin: auto;
 	margin-bottom: 10px;
 }
-
 .ready_arrivalse__book-container:nth-child(2),
 .ready_arrivalse__book-container:nth-child(3){display: none;}
 
@@ -24,14 +23,12 @@
 	margin: 0;
 	}
 }
-
 .ready_arrivalse__arrow
 {
 	display: flex;
 	width: 61px;
 	height: 30px;
 }
-
 .ready_arrivalse__arrow-left,
 .ready_arrivalse__arrow-right
 {
@@ -42,7 +39,6 @@
 	height: 100%;
 	border: 1px solid rgba(28, 41, 77, 0.15);
 }
-
 .ready_arrivalse__arrow-left
 {
 	border-right: none;
@@ -51,9 +47,7 @@
  	svg:first-child{transform: rotate(180deg);}
 }
 .ready_arrivalse__arrow-right{border-radius: 0 5px 5px 0;}
-
 .ready_arrivalse__books{display: flex;}
-
 .ready_arrivalse__book
 {
 	position: relative;
@@ -62,9 +56,7 @@
 	border-top: 1px solid #DDDEF4;
 	border-bottom: 1px solid #DDDEF4;
 }
-
 .ready_arrivalse__book-container:not(:last-child){border-right: 1px solid #DDDEF4;}
-
 .ready_arrivalse__book-status
 {
 	position: absolute;
@@ -86,7 +78,6 @@
 		color: #AC8EE3;
 	}
 }
-
 .ready_arrivalse__book-stock
 {
 	position: absolute;
@@ -108,7 +99,6 @@
 		color: #FF4F52;
 	}
 }
-
 .ready_arrivalse__book-img
 {
 	margin: auto;
@@ -122,7 +112,6 @@
 		height: 100%;
 	}
 }
-
 .ready_arrivalse__info-book
 {
 	margin: auto;
@@ -167,8 +156,6 @@
 		color: #1C294D;
 	}
 }
-
-
 .ready_arrivalse__rating
 {
 	margin-bottom: 10px;
@@ -198,7 +185,6 @@
 		color: #FBC02D;
 	}
 }
-
 .ready_arrivalse__recommendation
 {
 	display: flex;
@@ -218,7 +204,6 @@
 		font-size: 12px;
 	}
 }
-
 .ready_arrivalse__book-container:last-child
 {
 	.ready_arrivalse__recommendation{display: none;}
@@ -232,7 +217,6 @@
 	margin: 0 auto;
 	justify-content: space-between;
 }
-
 .ready_arrivalse__in-garbage
 {
 	display: flex;
@@ -258,7 +242,6 @@
 		font-size: 14px;
 	}
 }
-
 .ready_arrivalse__bookmark
 {
 	display: flex;
@@ -275,7 +258,6 @@
 		margin-right: 11px;
 	}
 }
-
 .ready_arrivalse__more-books
 {
 	height: 40px;
@@ -291,18 +273,13 @@
 	}
 }
 
-
-
-
 @media (min-width: 768px)
 {
 	.ready_arrivalse{width: 748px;}
-
 	.ready_arrivalse__book{width: 185px;}
 
 	.ready_arrivalse__book-container:nth-child(2),
 	.ready_arrivalse__book-container:nth-child(3){display: block;}
-
 	.ready_arrivalse__book-container:not(:last-child){border-right: 1px solid #DDDEF4;}
 
 	.ready_arrivalse__book-news
@@ -327,7 +304,6 @@
 			color: #3DC47E;
 		}
 	}
-
 	.ready_arrivalse__sale
 	{
 		display: flex;
@@ -378,10 +354,6 @@
 	}
 }
 
-
-
-
-
 @media (min-width: 1366px)
 {
 	.ready_arrivalse
@@ -389,9 +361,7 @@
 		width: 1140px;
 		margin-bottom: 30px;
 	}
-
 	.ready_arrivalse__heading{padding: 0 25px;}
-
 	.ready_arrivalse__book-container:last-child{width: 276px;}
 
 	.ready_arrivalse__book:nth-child(2),
@@ -403,7 +373,6 @@
 		border-top: 1px solid #DDDEF4;
 		border-bottom: 1px solid #DDDEF4;
 	}
-
 	.ready_arrivalse__book
 	{
 		width: 263px;
@@ -411,7 +380,6 @@
 		padding: 25px 20px 21px;
 		border: none;
 	}
-
 	.ready_arrivalse__book-img{margin: 0;}
 
 	.ready_arrivalse__info-book
@@ -424,26 +392,22 @@
 
 		p:nth-child(3){letter-spacing: -0.1px}
 	}
-
 	.ready_arrivalse__rating
 	{
 		display: flex;
 		padding: 0;
 		margin-bottom: 12px;
 	}
-
 	.ready_arrivalse__star
 	{
 		margin: 0;
 		margin-right: 10px;
 	}
-
 	.ready_arrivalse__price-book
 	{
 		width: 196px;
 		margin: 0;
 	}
-
 	.ready_arrivalse__in-garbage
 	{
 		width: 145px;
@@ -457,7 +421,6 @@
 
 		p{margin: 0;}
 	}
-
 	.ready_arrivalse__bookmark
 	{
 		width: 40px;
@@ -465,7 +428,6 @@
 
 		svg{margin-left: 14px;}
 	}
-
 	.ready_arrivalse__book-container:first-child
 	{
 		.ready_arrivalse__book{padding: 25px 13px 21px;}
@@ -476,13 +438,11 @@
 			left: 13px;
 			padding: 4px;
 		}
-
 		.ready_arrivalse__book-stock
 		{
 			top: 55px;
 			left: 13px;
 		}
-
 		.ready_arrivalse__book-img
 		{
 			width: 140px;
@@ -490,10 +450,8 @@
 			margin-left: 41px;
 			margin-bottom: 14px;
 		}
-
 		.ready_arrivalse__info-book{margin-bottom: 6px;}
 	}
-
 	.ready_arrivalse__book-container:nth-child(2)
 	{
 		width: 292px;
@@ -505,7 +463,6 @@
 			margin-left: 47px;
 			margin-bottom: 13px;
 		}
-
 		.ready_arrivalse__book-news
 		{
 			top: 20px;
@@ -514,9 +471,7 @@
 		}
 
 		.ready_arrivalse__info-book{margin-bottom: 7px;}
-
 		.ready_arrivalse__in-garbage svg{margin-left: 25.67px;}
-
 		.ready_arrivalse__star{margin-right: 10px;}
 	}
 
@@ -531,21 +486,18 @@
 			margin-left: 37px;
 			margin-bottom: 13px;
 		}
-
 		.ready_arrivalse__book-news
 		{
 			top: 20px;
 			left: 20px;
 			padding: 4px;
 		}
-
 		.ready_arrivalse__info-book
 		{
 			margin-bottom: 5px;
 
 			p:nth-child(3){letter-spacing: -0.1px;}
 		}
-
 		.ready_arrivalse__sale
 		{
 			p:first-child
@@ -569,7 +521,6 @@
 			}
 		}
 	}
-
 	.ready_arrivalse__book-container:last-child
 	{
 		.ready_arrivalse__book{padding-left: 28px;}
@@ -580,13 +531,11 @@
 			left: 28px;
 			padding: 4px;
 		}
-
 		.ready_arrivalse__book-stock
 		{
 			top: 55px;
 			left: 28px;
 		}
-
 		.ready_arrivalse__book-img
 		{
 			width: 140px;
@@ -596,9 +545,7 @@
 		}
 
 		.ready_arrivalse__info-book{margin-bottom: 6px;}
-
 		.ready_arrivalse__rating{margin-bottom: 12px;}
-
 		.ready_arrivalse__recommendation{display: flex;}
 	}
 }

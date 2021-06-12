@@ -1,17 +1,13 @@
 main{background-color: #F9F9FA;}
-
 .header
 {
     margin-bottom: 11px;
     background-color: #fff;
 }
-
 .header{padding: 0 16px;}
-
 .header__block__top,
 .header__user-content,
 .header__menu{display: none;}
-
 .header__block-content
 {
     display: flex;
@@ -26,14 +22,12 @@ main{background-color: #F9F9FA;}
     background-color: #fff;
     width: 100%;
 }
-
 .header__burger
 {
     width: 20px;
     height: 20px;
     margin: 0 15px 0 4px;
 }
-
 .header__logo
 {
     display: block;
@@ -47,7 +41,6 @@ main{background-color: #F9F9FA;}
         height: 100%;
     }
 }
-
 .header__input
 {
     font-family: 'Roboto';
@@ -62,7 +55,6 @@ main{background-color: #F9F9FA;}
     border-radius: 5px 0 0 5px;
     background-color:  #F7F7F7;;
 }
-
 .header__button
 {
     display: flex;
@@ -79,7 +71,7 @@ main{background-color: #F9F9FA;}
     svg:nth-child(2){display: none;}
     span{display: none;}
 }
-
+.header__basket-mobile,
 .header__basket
 {
     display: block;
@@ -93,7 +85,6 @@ main{background-color: #F9F9FA;}
         width: 100%;
         height: 100%;
     }
-
     &:after
     {
         display: flex;
@@ -116,9 +107,8 @@ main{background-color: #F9F9FA;}
 
 @media(min-width: 768px)
 {
-
-    .header__block-content { display: flex;}
-
+    .header__basket-mobile{display: none;}
+    .header__block-content{ display: flex;}
     .header__input
     {
         background: #FFFFFF;
@@ -128,7 +118,6 @@ main{background-color: #F9F9FA;}
         border-radius: 5px 0 0 5px;
         width: 250px;
     }
-
     .header__button
     {
         display: flex;
@@ -140,14 +129,11 @@ main{background-color: #F9F9FA;}
         height: 44px;
         padding-left: 0;
     }
-
-
     .header__user-content
     {
         display: flex;
         margin: auto 0 auto 0;
     }
-
     .header__user-list
     {
         display: flex;
@@ -157,10 +143,8 @@ main{background-color: #F9F9FA;}
             display: flex;
             align-items: center;
         }
-
         li:nth-child(2){margin: 0 20px;}
     }
-
     .header__user-link
     {
         font-family: 'Roboto';
@@ -170,24 +154,18 @@ main{background-color: #F9F9FA;}
         text-align: center;
         margin-left: 6.67px;
     }
-
     .header__user-link:first-child{margin-left: 10px;}
-
     .header__basket{margin: 0;}
 }
 
 @media(min-width: 1366px)
 {
-    header{margin-bottom: 30px;}
+    .header{margin-bottom: 30px;}
     .header
     {
         height: 171px;
         position: relative;
     }
-
-
-    .header__menu{display: block;}
-
     .header__block__top
     {
         display: flex;
@@ -202,15 +180,12 @@ main{background-color: #F9F9FA;}
             color: rgba(28, 41, 77, .8);
 
         }
-
     }
-
     .header__navigation
     {
         display: flex;
         width: 452px;
     }
-
     .header__navigation-list
     {
         display: flex;
@@ -249,17 +224,15 @@ main{background-color: #F9F9FA;}
             svg{margin-right: 6px;}
         }
     }
-
     .header__contact
     {
         width: 338px;
     }
-
     .header__contact-list
     {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        padding-right: 1px;
 
         li
         {
@@ -274,7 +247,6 @@ main{background-color: #F9F9FA;}
         li:first-child
         {
             margin-right: 27px;
-            margin-top: 4px;
             svg
             {
                 margin-right: 7px;
@@ -284,16 +256,12 @@ main{background-color: #F9F9FA;}
             }
         }
 
-        li:nth-child(2)
+        li:last-child
         {
-            svg:first-child{margin: 5px;}
-
-            a{margin-right: 7px;}
+            svg:first-child{margin-right: 5px;}
+            svg:last-child{margin-left: 7px;}
         }
     }
-
-
-
     .header__line
     {
         position: absolute;
@@ -301,10 +269,7 @@ main{background-color: #F9F9FA;}
         right: 500px;
         top: 150px;
         background-color: red;
-
     }
-
-
     .header__block__bottom
     {
         display: flex;
@@ -312,10 +277,7 @@ main{background-color: #F9F9FA;}
         justify-content: space-between;
         height: 120px;
         padding: 20px 0 19px;
-
-
     }
-
     .header__block-content
     {
         display: flex;
@@ -324,7 +286,6 @@ main{background-color: #F9F9FA;}
         height: 41px;
         width: 1140;
     }
-
     .header__block-search
     {
         display: flex;
@@ -332,7 +293,6 @@ main{background-color: #F9F9FA;}
         width: 653px;
         height: 100%;
     }
-
     .header__logo
     {
         width: 50px;
@@ -347,7 +307,6 @@ main{background-color: #F9F9FA;}
             height: 100%;
         }
     }
-
     .header__input
     {
         width: 432px;
@@ -355,8 +314,6 @@ main{background-color: #F9F9FA;}
         border-radius: 5px 0 0 5px;
         box-sizing: border-box;
     }
-
-
     .header__button
     {
         width: 123px;
@@ -377,15 +334,13 @@ main{background-color: #F9F9FA;}
 
         span{display:block;}
     }
-
     .header__burger.none{display: none;}
-
     .header__user-content
     {
         width: 291px;
+        height: 20px;
         margin: 0;
     }
-
     .header__user-list
     {
         .header__user-link{margin: 0;}
@@ -404,7 +359,6 @@ main{background-color: #F9F9FA;}
             svg{margin-right: 6px;}
         }
     }
-
     .header__basket
     {
         width: 18px;
@@ -412,7 +366,6 @@ main{background-color: #F9F9FA;}
         margin: 0;
         margin-right: 5px;
     }
-
     .header__basket::after
     {
         width: 15px;
@@ -421,7 +374,6 @@ main{background-color: #F9F9FA;}
         right: -8px;
         font-size: 9px;
     }
-
     .header__menu
     {
         display: flex;
@@ -432,17 +384,8 @@ main{background-color: #F9F9FA;}
         li
         {
             display: flex;
-            list-style: none;
             margin-right: 26px;
-        }
-
-        .header__menu-sale
-        {
-            svg
-            {
-                margin-top: 1px;
-                margin-right: 6px;
-            }
+            list-style: none;
         }
 
         li:last-child{margin-right: 0;}
@@ -452,6 +395,7 @@ main{background-color: #F9F9FA;}
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
+            color: #1C294D;
         }
 
         .header__burger
@@ -460,18 +404,14 @@ main{background-color: #F9F9FA;}
             margin-right: 4px;
         }
     }
+    .header__menu-sale
+    {
+        a{color: #FF283D;}
+
+        svg
+        {
+            margin-top: 1px;
+            margin-right: 6px;
+        }
+    }
 }
-
-    html
-    {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    body
-    {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
