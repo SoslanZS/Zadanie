@@ -1,7 +1,4 @@
-.slider{
-	background-color: #F9F9FA;
-	margin-bottom: 10px;
-}
+.slider{margin-bottom: 10px;}
 .slider__slider
 {
 	display: flex;
@@ -62,6 +59,7 @@
 	margin: auto;
 	margin-bottom: 20px;
 	width: 315px;
+	padding-top: 1px;
 
 	h3
 	{
@@ -111,7 +109,7 @@
 	width: 315px;
 	font-family: Roboto;
 
-	p:first-child
+	p:first-of-type
 	{
 		margin: 0;
 		margin-bottom: 5px;
@@ -120,8 +118,9 @@
 		color: rgba(28, 41, 77, 0.5);
 
 	}
-	p:nth-child(2)
+	a:first-of-type
 	{
+		display: block;
 		margin: 0;
 		margin-bottom: 8px;
 		font-weight: 500;
@@ -130,7 +129,7 @@
 		line-height: 19px;
 	}
 
-	p:nth-child(3)
+	p:nth-of-type(2)
 	{
 		margin: 0;
 		margin-bottom: 4px;
@@ -139,7 +138,7 @@
 		color:	#1C294D;
 	}
 
-	p:last-child
+	p:last-of-type
 	{
 		margin: 0;
 		font-weight: bold;
@@ -167,12 +166,15 @@
 
 	svg{margin-right: 12px;}
 
-	p
+	a
 	{
+		display: flex;
+		align-items: center;
 		margin: 0;
 		font-family: Roboto;
 		font-weight: 500;
 		font-size: 14px;
+		color: #1C294D;
 	}
 }
 .slider__bookmark
@@ -189,17 +191,111 @@
 .slider__delivery,
 .slider__banner-sale
 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 355px;
 	height: 140px;
 	margin: auto;
+	border-radius: 5px;
+
+	a
+	{
+		display: flex;
+		justify-content: space-between;
+		width: 314.78px;
+		height: 100px;
+		color: #fff;
+	}
+}
+
+.slider__delivery
+{
+	background-color: #6D378F;
+	margin-bottom: 10px;
+
+	a{color: #fff;}
+}
+
+.slider__banner-sale
+{
+	background-color: #FFD8EF;
+
+	a{color: rgba(28, 41, 77, 0.8);}
+}
+
+.slider__delivery-text
+{
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+	margin: auto 0;
+	font-family: Gosha Sans;
+	font-weight: normal;
+	font-size: 20px;
+	width: 199px;
+	height: 75px;
+	line-height: 25px;
+
+	&::before
+	{
+		content: '';
+		position: absolute;
+		left: -12px;
+		z-index: -1;
+		width: 126px;
+		height: 31px;
+		background-image: url("img/tape-delivery.png");
+	}
+}
+.slider__delivery-img
+{
+	display: block;
+	width: 97.78px;
+	height: 100px;
+
 	svg
 	{
 		width: 100%;
 		height: 100%;
 	}
 }
+.slider__banner-text
+{
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+	width: 199px;
+	height: 75px;
+	margin: auto 0;
+	font-family: Gosha Sans;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 25px;
+}
+.slider__banner-text::before
+{
+	content: '';
+	position: absolute;
+	top: 50px;
+	left: 20px;
+	z-index: -1;
+	width: 67px;
+	height: 27px;
+	background-image: url('img/tape-banner.png');
+}
+.slider__banner-img
+{
+	display: block;
+	width: 125px;
+	height: 100px;
 
-.slider__delivery{margin-bottom: 10px;}
+	svg
+	{
+		width: 100%;
+		height: 100%;
+	}
+}
 
 @media (min-width: 768px) {
 	.slider__banners{display: none;}
@@ -238,18 +334,6 @@
 		max-width: 750px;
 		grid-area: banners;
 	}
-	.slider__delivery,
-	.slider__banner-sale
-	{
-		margin: 0;
-		width: 240px;
-		height: 100%;
-		svg
-		{
-			width: 100%;
-			height: 100%;
-		}
-	}
 	.slider__books-day
 	{
 		grid-area: books;
@@ -259,6 +343,61 @@
 	{
 		width: 115px;
 		height: 165px;
+	}
+	.slider__delivery,
+	.slider__banner-sale
+	{
+		margin: 0;
+		width: 240px;
+		height: 100%;
+	}
+
+	.slider__delivery
+	{
+		a
+		{
+			flex-direction: column;
+			height: 120px;
+			padding-left: 12px;
+		}
+	}
+	.slider__delivery-text
+	{
+		width: auto;
+		height: 75px;
+		font-size: 16px;
+	}
+	.slider__delivery-img
+	{
+		width: 70px;
+		height: 72px;
+		margin: auto;
+	}
+	.slider__banner-sale
+	{
+		a
+		{
+			flex-direction: column;
+			height: 120px;
+			padding-left: 12px;
+		}
+	}
+	.slider__banner-text
+	{
+		width: auto;
+		height: 75px;
+		font-size: 16px;
+	}
+	.slider__banner-text::before
+	{
+		top: 26px;
+		left: 139px;
+	}
+	.slider__banner-img
+	{
+		width: 92px;
+    	height: 78px;
+		margin: auto;
 	}
 }
 
@@ -272,7 +411,7 @@
 		grid-template-columns: 750px 360px;
 		grid-template-rows: 350px 140px;
 		gap: 30px;
-		padding: 0 6px;
+		width: 1140px;
 		margin-bottom: 30px;
 	}
 
@@ -300,7 +439,11 @@
 		height: 520px;
 		padding: 20px 20px 26px;
 	}
-	.slider__header-books-day{width: 320px;}
+	.slider__header-books-day
+	{
+		width: 320px;
+		padding: 0;
+	}
 
 	.slider__img-books-day
 	{
@@ -335,5 +478,56 @@
 		margin: 0;
 		width: 360px;
 		height: 100%;
+
+		a
+		{
+			flex-direction: row;
+			width: 309.78px;
+			height: 103px;
+			padding: 0;
+		}
+	}
+
+	.slider__delivery-text
+	{
+
+		width: 199px;
+		height: 75px;
+		font-size: 20px;
+	}
+	.slider__delivery-text::before{left: -12px;}
+	.slider__banner-text
+	{;
+		width: 199px;
+		height: 75px;
+		font-size: 20px;
+	}
+	.slider__banner-text::before
+	{
+		top: 50px;
+		left: 20px;
+	}
+	.slider__delivery-img
+	{
+		width: 97.78px;
+		height: 100px;
+		margin: 0;
+	}
+	.slider__banner-text
+	{
+		width: 199px;
+		height: 75px;
+		font-size: 20px;
+	}
+	.slider__banner-text::before
+	{
+		top: 50px;
+		left: 20px;
+	}
+	.slider__banner-img
+	{
+		width: 125px;
+		height: 100px;
+		margin: 0;
 	}
 }

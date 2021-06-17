@@ -1,9 +1,13 @@
 main{background-color: #F9F9FA;}
-.header
+
+.container
 {
-    margin-bottom: 11px;
-    background-color: #fff;
+    padding: 0 10px;
+    margin-bottom: 10px;
 }
+
+.header
+{background-color: #fff;}
 .header{padding: 0 16px;}
 .header__block__top,
 .header__user-content,
@@ -67,6 +71,7 @@ main{background-color: #F9F9FA;}
     border: none;
     border-radius: 0 5px 5px 0;
     background: #F7F7F7;
+    color: #fff;
 
     svg:nth-child(2){display: none;}
     span{display: none;}
@@ -85,17 +90,17 @@ main{background-color: #F9F9FA;}
         width: 100%;
         height: 100%;
     }
-    &:after
+    &:before
     {
         display: flex;
         justify-content: center;
-        align-items: center;
         content: '10';
         position: absolute;
         top: -12px;
         right: -11px;
         width: 20px;
         height: 20px;
+        padding-top: 1px;
         color: #fff;
         border-radius: 50%;
         background-color: #ff7a00;
@@ -160,7 +165,11 @@ main{background-color: #F9F9FA;}
 
 @media(min-width: 1366px)
 {
-    .header{margin-bottom: 30px;}
+    .container
+    {
+        padding: 0 16px;
+        margin-bottom: 30px;
+    }
     .header
     {
         height: 171px;
@@ -365,14 +374,16 @@ main{background-color: #F9F9FA;}
         height: 18px;
         margin: 0;
         margin-right: 5px;
-    }
-    .header__basket::after
-    {
-        width: 15px;
-        height: 15px;
-        top: -8px;
-        right: -8px;
-        font-size: 9px;
+
+        &::before
+        {
+            top: -8px;
+            right: -8px;
+            width: 15px;
+            height: 15px;
+            padding-top: 2px;
+            font-size: 9px;
+        }
     }
     .header__menu
     {
@@ -381,6 +392,9 @@ main{background-color: #F9F9FA;}
         width: 483px;
         height: 20px;
         padding: 0;
+
+        ul{display: flex}
+
         li
         {
             display: flex;
@@ -406,7 +420,11 @@ main{background-color: #F9F9FA;}
     }
     .header__menu-sale
     {
-        a{color: #FF283D;}
+        a
+        {
+            display: flex;
+            color: #FF283D;
+        }
 
         svg
         {

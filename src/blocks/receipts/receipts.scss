@@ -17,10 +17,10 @@
 
 	h2
 	{
-	font-family: Roboto;
-	font-weight: bold;
-	font-size: 20px;
-	margin: 0;
+		font-family: Roboto;
+		font-weight: bold;
+		font-size: 20px;
+		margin: 0;
 	}
 }
 .receipts__arrow
@@ -104,7 +104,7 @@
 .receipts__book-img
 {
 	margin: auto;
-	margin-bottom: 15px;
+	margin-bottom: 14px;
 	width: 126px;
 	height: 180px;
 
@@ -117,22 +117,23 @@
 .receipts__info-book
 {
 	margin: auto;
-	margin-right: 12px;
+	margin-right: 13px;
 	margin-bottom: 1px;
-	width: 155px;
+	width: 154px;
 	font-family: Roboto;
 
 	p:first-child
 	{
 		margin: 0;
-		margin-bottom: 4px;
+		margin-bottom: 5px;
 		font-style: normal;
 		font-size: 12px;
 		color: rgba(28, 41, 77, 0.5);
 
 	}
-	p:nth-child(2)
+	a
 	{
+		display: block;
 		margin: 0;
 		margin-bottom: 7px;
 		font-weight: 500;
@@ -173,33 +174,36 @@
 	background: #FEF6E0;
 	border-radius: 5px;
 
-	svg
+	a
 	{
-		margin: 6.25px 0 6.87px;
-		margin-right: 5px;
-	}
-	p
-	{
+		display: flex;
 		margin: 4px 0;
 		font-family: Roboto;
 		font-weight: 500;
 		font-size: 12px;
 		color: #FBC02D;
 	}
+
+	svg
+	{
+		margin: 3.25px 0 6.87px;
+		margin-right: 5px;
+	}
 }
 .receipts__recommendation
 {
 	display: flex;
-	padding-left: 11px;
+	padding-left: 6px;
 	width: 144px;
 	height: 25px;
 	background-color: #EBEDF7;
 	border-radius: 5px;
 
-	svg{margin: 5.88px 2.25px 6.88px 0;}
+	svg{margin: 2.88px 6.25px 0 0;}
 
-	p
+	a
 	{
+		display: flex;
 		margin: 4px;
 		font-family: Roboto;
 		font-weight: 500;
@@ -234,10 +238,12 @@
 		margin-left: 12.67px;
 	}
 
-	p
+	a
 	{
+		display: flex;
+		align-items: center;
 		margin: 0;
-		margin-top: 2px;
+		margin-top: 1px;
 		font-family: Roboto;
 		font-weight: 500;
 		font-size: 14px;
@@ -262,15 +268,16 @@
 .receipts__more-books
 {
 	height: 40px;
-	padding: 10px 0;
+	padding-top: 7px;
+	border-radius: 0 0 5px 5px;
+	text-align: center;
 
-	p
+	a
 	{
 		margin: 0;
 		font-family: Roboto;
 		font-weight: 500;
 		font-size: 14px;
-		text-align:center
 	}
 }
 
@@ -378,7 +385,7 @@
 	{
 		width: 263px;
 		margin: 0 auto;
-		padding: 25px 20px 21px;
+		padding: 25px 20px 20px;
 		border: none;
 	}
 	.receipts__book-img{margin: 0;}
@@ -389,7 +396,7 @@
 
 		p:first-child{margin-bottom: 5px;}
 
-		p:nth-child(2){margin-bottom: 8px;}
+		a{margin-bottom: 8px;}
 
 		p:nth-child(3){letter-spacing: -0.1px}
 	}
@@ -397,7 +404,7 @@
 	{
 		display: flex;
 		padding: 0;
-		margin-bottom: 12px;
+		margin-bottom: 13px;
 	}
 	.receipts__star
 	{
@@ -413,6 +420,7 @@
 	{
 		width: 145px;
 		height: 40px;
+		padding-bottom: 2px;
 
 		svg
 		{
@@ -420,7 +428,12 @@
 			margin-right: 11px;
 		}
 
-		p{margin: 0;}
+		a
+		{
+			display: flex;
+			align-items: center;
+			margin: 0;
+		}
 	}
 	.receipts__bookmark
 	{
@@ -431,7 +444,7 @@
 	}
 	.receipts__book-container:first-child
 	{
-		.receipts__book{padding: 25px 13px 21px;}
+		.receipts__book{padding: 25px 13px 20px;}
 
 		.receipts__book-status
 		{
@@ -451,7 +464,12 @@
 			margin-left: 41px;
 			margin-bottom: 14px;
 		}
-		.receipts__info-book{margin-bottom: 6px;}
+		.receipts__info-book
+		{
+			margin-bottom: 6px;
+			display: flex;
+			flex-direction: column;
+		}
 	}
 	.receipts__book-container:nth-child(2)
 	{
@@ -471,7 +489,7 @@
 			padding: 4px;
 		}
 		.receipts__info-book{margin-bottom: 7px;}
-		.receipts__in-garbage svg{margin-left: 25.67px;}
+		.receipts__in-garbage svg{margin-left: 24.67px;}
 		.receipts__star{margin-right: 10px;}
 	}
 	.receipts__book-container:nth-child(3)
@@ -493,31 +511,31 @@
 		}
 		.receipts__info-book
 		{
-			margin-bottom: 5px;
+			margin-bottom: 6px;
 
-			p:nth-child(3){letter-spacing: -0.1px;}
+			a:nth-child(3){letter-spacing: -0.1px;}
 		}
-		.receipts__sale
+	}
+	.receipts__sale
+	{
+		p:first-child
 		{
-			p:first-child
-			{
-				margin: 0;
-				margin-right: 8px;
-			}
+			margin: 0;
+			margin-right: 8px;
+		}
 
-			p:nth-child(2)
-			{
-				position: relative;
-				margin: 0;
-				margin-top: 10px;
-				margin-right: 7px;
-			}
+		p:nth-child(2)
+		{
+			position: relative;
+			margin: 0;
+			margin-top: 10px;
+			margin-right: 7px;
+		}
 
-			p:last-child
-			{
-				margin: 0;
-				margin-top: 7px;
-			}
+		p:last-child
+		{
+			margin: 0;
+			margin-top: 7px;
 		}
 	}
 	.receipts__book-container:last-child
@@ -545,5 +563,6 @@
 		.receipts__info-book{margin-bottom: 6px;}
 		.receipts__rating{margin-bottom: 12px;}
 		.receipts__recommendation{display: flex;}
+		.receipts__in-garbage{padding: 0;}
 	}
 }

@@ -36,9 +36,9 @@
 						</a>
 
 						<ul>
-							<li>Наша почта</li>
-							<li>Оплата и доставка</li>
-							<li>Вопросы и ответы</li>
+							<li><a>Наша почта</a></li>
+							<li><a>Оплата и доставка</a></li>
+							<li><a>Вопросы и ответы</a></li>
 						</ul>
 					</li>
 					<li class="footer__info">
@@ -47,22 +47,22 @@
 							{% include "assets/svg/arrow-bottom.svg" %}
 						</a>
 						<ul>
-							<li>О компании</li>
-							<li>Авторам</li>
-							<li>Вакансии</li>
-							<li>Контакты</li>
+							<li><a>О компании</a></li>
+							<li><a>Авторам</a></li>
+							<li><a>Вакансии</a></li>
+							<li><a>Контакты</a></li>
 						</ul>
 					</li>
 					<li class="footer__info">
-					<a>
+						<a>
 							<span>Книги</span>
 							{% include "assets/svg/arrow-bottom.svg" %}
 						</a>
 						<ul>
-							<li>Все категории</li>
-							<li>Бестселлеры</li>
-							<li>Новинки</li>
-							<li>Скидки и акции</li>
+							<li><a>Все категории</a></li>
+							<li><a>Бестселлеры</a></li>
+							<li><a>Новинки</a></li>
+							<li><a>Скидки и акции</a></li>
 						</ul>
 					</li>
 					<li class="footer__info">
@@ -71,8 +71,12 @@
 							{% include "assets/svg/arrow-bottom.svg" %}
 						</a>
 						<ul>
-							<li>
-								{% include "assets/svg/list.svg" %}
+							<li class="footer__price-list">
+								<a>{% include "assets/svg/list.svg" %}</a>
+								<div>
+									<a href="#">Скачать прайс-лист</a>
+									<a href="#">PDF, 12 Mb </a>
+								</div>
 							</li>
 						</ul>
 					</li>
@@ -84,18 +88,21 @@
 				</ul>
 				<ul class="footer__select-contact">
 					<li>Телефон и Email</li>
-					<li class="footer__telephone"><a href="">
+					<li class="footer__telephone">
+						<a href="">
 							{% include "assets/svg/devices-icon.svg" %}
 							<span>8 (968) 660-65-50</span>
 							{% include "assets/svg/interface-icon.svg"%}
 						</a>
 					</li>
-					<li class="footer__letter"><a href="">
+					<li class="footer__letter">
+						<a href="">
 							{% include "assets/svg/mail-icon.svg" %}
 							<span>market@estatut.ru</span>
 						</a>
 					</li>
-					<li class="footer__location"><a href="">
+					<li class="footer__location">
+						<a href="">
 							{% include "assets/svg/location-icon.svg"%}
 							<span>ул. Лобачевского, 92, корп. 2 119454, г. Москва</span>
 						</a>

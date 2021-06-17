@@ -20,18 +20,20 @@
 				</div>
 			</div>
 			<div class="slider__img-books-day">
-				<img src="img/books_day.png" alt="">
+				<a href="#"><img src="img/books_day.png" alt=""></a>
 			</div>
 			<div class="slider__info-books-day">
 				<p>Корпоративное право</p>
-				<p>Инвестирование: способы, риски, субъекты : монография</p>
+				<a>Инвестирование: способы, риски, субъекты : монография</a>
 				<p>Майфат А.В.</p>
 				<p>4 450 ₽ </p>
 			</div>
 			<div class="slider__price-books-day">
 				<div class="slider__in-garbage">
-					{% include "assets/svg/basket-orange.svg" %}
-					<p>В корзину</p>
+					<a href="#">
+						{% include "assets/svg/basket-orange.svg" %}
+						В корзину
+					</a>
 				</div>
 				<div class="slider__bookmark">
 					{% include "assets/svg/shortcut-icon.svg" %}
@@ -41,10 +43,20 @@
 
 		<section class="slider__advertising">
 			<div class="slider__delivery">
-				{% include "assets/svg/delivery.svg" %}
+				<a href="#">
+					<span class="slider__delivery-text">Бесплатно доставим ваш заказ при покупке от 2000 ₽</span>
+					<span class="slider__delivery-img">
+						{% include "assets/svg/delivery-humen.svg" %}
+					</span>
+				</a>
 			</div>
 			<div class="slider__banner-sale">
-				{% include "assets/svg/banners-sale.svg" %}
+				<a href="#">
+					<span class="slider__banner-text">Скидка <br/>при регистрации до 15%</span>
+					<span class="slider__banner-img">
+						{% include "assets/svg/bunners-humen.svg" %}
+					</span>
+				</a>
 			</div>
 		</section>
 

@@ -243,16 +243,15 @@ li.footer__location
 	.footer__select-info
 	{
 		display: flex;
-		width: 750px;
+		width: 755px;
 		height: 215px;
 		padding:0;
-		margin-right: 30px;
+		margin-right: 25px;
 
 		svg{display: none;}
 
 		li
 		{
-			margin-right: 30px;
 			padding: 0;
 			font-family: Roboto;
 			font-weight: 500;
@@ -263,7 +262,7 @@ li.footer__location
 	.footer__info
 	{
 		height: 20px;
-		span{margin-bottom: 24px;}
+		span{margin-bottom: 23px;}
 		ul
 		{
 			display: flex;
@@ -281,11 +280,49 @@ li.footer__location
 				line-height: 20px;
 				color: rgba(40, 47, 54, 0.8);
 			}
+
+			svg{display: block;}
 		}
 	}
-	.footer__info:first-child{margin-right: 71px;}
+	.footer__info:first-child{margin-right: 67px;}
 	.footer__info:nth-child(2){margin-right: 98px;}
-	.footer__info:nth-child(3){margin-right: 92px;}
+	.footer__info:nth-child(3){margin-right: 88px;}
+	.footer__info:last-child
+	{
+		span
+		{
+			margin: 0;
+			margin-bottom: 19px;
+		}
+	}
+
+	.footer__price-list
+	{
+		display: flex;
+		div
+		{
+			padding-top: 5px;
+
+			a:first-child
+			{
+				margin-bottom: -2px;
+				font-family: Roboto;
+				font-weight: normal;
+				font-size: 14px;
+				color: rgba(40, 47, 54, 0.8);
+
+			}
+
+			a:last-child
+			{
+				font-family: Roboto;
+				font-weight: normal;
+				font-size: 12px;
+				color: rgba(40, 47, 54, 0.5);
+
+			}
+		}
+	}
 
 	.footer__select-contact
 	{
@@ -324,14 +361,20 @@ li.footer__location
 	{
 		grid-area: letter;
 		margin-bottom: 12px;
-
-		svg{margin-right: 10px;}
+		a{padding-left: 2px;}
+		svg{margin-right: 8px;}
 	}
 	.footer__telephone
 	{
 		grid-area: telefon;
 
-		svg:first-child{margin-right: 10px;}
+		a
+		{
+			padding-top: 1px;
+			padding-left: 2px;
+		}
+
+		svg:first-child{margin-right: 8px;}
 
 		svg:last-child{display: none;}
 	}
