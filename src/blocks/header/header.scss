@@ -1,4 +1,4 @@
-main{background-color: #F9F9FA;}
+body{background-color: #F9F9FA;}
 
 .container
 {
@@ -6,8 +6,9 @@ main{background-color: #F9F9FA;}
     margin-bottom: 10px;
 }
 
-.header
+header
 {background-color: #fff;}
+
 .header{padding: 0 16px;}
 .header__block__top,
 .header__user-content,
@@ -172,15 +173,15 @@ main{background-color: #F9F9FA;}
     }
     .header
     {
-        height: 171px;
+        height: 170px;
         position: relative;
     }
     .header__block__top
     {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         height: 50px;
+        padding-top: 14px;
 
         a
         {
@@ -274,18 +275,19 @@ main{background-color: #F9F9FA;}
     .header__line
     {
         position: absolute;
-        height: 10px;
-        right: 500px;
-        top: 150px;
-        background-color: red;
+        top: 49px;
+        right: 0;
+        left: 0;
+        height: 1px;
+        margin: auto;
+        background-color: #DFE0E1;
     }
     .header__block__bottom
     {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         height: 120px;
-        padding: 20px 0 19px;
+        padding-top: 19px;
     }
     .header__block-content
     {
@@ -293,7 +295,7 @@ main{background-color: #F9F9FA;}
         align-items: center;
         justify-content: space-between;
         height: 41px;
-        width: 1140;
+        margin-bottom: 20px;
     }
     .header__block-search
     {
@@ -346,7 +348,7 @@ main{background-color: #F9F9FA;}
     .header__burger.none{display: none;}
     .header__user-content
     {
-        width: 291px;
+        width: 292px;
         height: 20px;
         margin: 0;
     }
@@ -356,14 +358,14 @@ main{background-color: #F9F9FA;}
 
         li:first-child
         {
-            margin-right: 12px;
+            margin-right: 11px;
 
-            svg{margin-right: 9px;}
+            svg{margin-right: 10px;}
         }
 
          li:nth-child(2)
         {
-            margin-right: 31px;
+            margin-right: 32px;
 
             svg{margin-right: 6px;}
         }
@@ -373,7 +375,7 @@ main{background-color: #F9F9FA;}
         width: 18px;
         height: 18px;
         margin: 0;
-        margin-right: 5px;
+        margin-right: 6px;
 
         &::before
         {

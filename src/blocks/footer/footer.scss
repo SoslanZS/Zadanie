@@ -109,6 +109,7 @@ footer .container{padding: 0;}
 		display: flex;
 		justify-content: space-between;
 		padding-right: 4px;
+		color: #2A3D48;
 	}
 
 	svg{margin-top: 8px;}
@@ -148,6 +149,7 @@ footer .container{padding: 0;}
 		font-style: normal;
 		font-weight: normal;
 		font-size: 14px;
+		color: #1C294D;
 	}
 
 	a
@@ -257,11 +259,15 @@ li.footer__location
 			font-weight: 500;
 			font-size: 14px;
 			color: #1C294D;
+
 		}
 	}
 	.footer__info
 	{
 		height: 20px;
+
+		a{color: #1C294D;}
+
 		span{margin-bottom: 23px;}
 		ul
 		{
@@ -278,7 +284,8 @@ li.footer__location
 				font-weight: normal;
 				font-size: 14px;
 				line-height: 20px;
-				color: rgba(40, 47, 54, 0.8);
+
+				a{color: #282F36;}
 			}
 
 			svg{display: block;}
@@ -353,6 +360,7 @@ li.footer__location
 			font-family: Roboto;
 			font-weight: 500;
 			font-size: 14px;
+			color: #1C294D;
 		}
 
 		li:last-child{display:none;}
@@ -361,7 +369,12 @@ li.footer__location
 	{
 		grid-area: letter;
 		margin-bottom: 12px;
-		a{padding-left: 2px;}
+
+		a
+		{
+			padding-left: 2px;
+			color: rgba(28, 41, 77, 0.8);
+		}
 		svg{margin-right: 8px;}
 	}
 	.footer__telephone
@@ -372,6 +385,7 @@ li.footer__location
 		{
 			padding-top: 1px;
 			padding-left: 2px;
+			color: rgba(28, 41, 77, 0.8);
 		}
 
 		svg:first-child{margin-right: 8px;}
@@ -405,7 +419,11 @@ li.footer__location
 			color: rgba(28, 41, 77, 0.8);
 		}
 
-		p:first-child{margin-right: 209px;}
+		p:first-of-type
+		{
+			margin-right: 209px;
+			color: rgba(28, 41, 77, 0.5);
+		}
 		p:nth-child(2){margin-right: 68px;}
 		a:nth-child(3){margin-right: 30px;}
 	}
