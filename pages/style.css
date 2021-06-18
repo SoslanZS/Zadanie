@@ -1457,6 +1457,9 @@ header {
   width: 355px;
   margin: auto;
   margin-bottom: 10px;
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .receipts__book-container:nth-child(2),
@@ -1886,6 +1889,9 @@ header {
   width: 355px;
   margin: auto;
   margin-bottom: 10px;
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .ready_arrivalse__book-container:nth-child(2),
@@ -2349,6 +2355,8 @@ header {
   margin: auto;
   margin-bottom: 20px;
   background-color: #fff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .news__heading {
