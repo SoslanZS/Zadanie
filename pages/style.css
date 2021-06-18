@@ -918,13 +918,13 @@ body {
   background-color: #F9F9FA;
 }
 
+header {
+  background-color: #fff;
+}
+
 .container {
   padding: 0 10px;
   margin-bottom: 10px;
-}
-
-header {
-  background-color: #fff;
 }
 
 .header {
@@ -3544,7 +3544,7 @@ html {
   }
 
   .header {
-    height: 170px;
+    height: 171px;
     position: relative;
   }
 
@@ -3558,7 +3558,7 @@ html {
     -ms-flex-pack: justify;
     justify-content: space-between;
     height: 50px;
-    padding-top: 14px;
+    padding-top: 15px;
   }
 
   .header__block__top a {
@@ -3687,7 +3687,7 @@ html {
     -ms-flex-direction: column;
     flex-direction: column;
     height: 120px;
-    padding-top: 19px;
+    padding-top: 20px;
   }
 
   .header__block-content {
