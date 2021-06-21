@@ -1011,7 +1011,6 @@ header {
   align-items: center;
   width: 41px;
   height: 42px;
-  margin-right: auto;
   padding-left: 7px;
   border: none;
   -webkit-border-radius: 0 5px 5px 0;
@@ -1020,7 +1019,7 @@ header {
   color: #fff;
 }
 
-.header__button svg:nth-child(2) {
+.header__button svg:last-of-type {
   display: none;
 }
 
@@ -2607,6 +2606,14 @@ html {
     padding-left: 0;
   }
 
+  .header__button svg:first-of-type {
+    display: none;
+  }
+
+  .header__button svg:last-of-type {
+    display: block;
+  }
+
   .header__user-content {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2637,6 +2644,19 @@ html {
     margin: 0 20px;
   }
 
+  .header__user-list li:not(:last-child) svg {
+    margin-right: 7px;
+  }
+
+  .header__basket {
+    margin: 0;
+    margin-right: 7px;
+  }
+
+  .header__basket:before {
+    padding-right: 1px;
+  }
+
   .header__user-link {
     font-family: 'Roboto';
     font-weight: normal;
@@ -2648,10 +2668,6 @@ html {
 
   .header__user-link:first-child {
     margin-left: 10px;
-  }
-
-  .header__basket {
-    margin: 0;
   }
 
   .slider__banners {
@@ -3809,6 +3825,7 @@ html {
     width: 15px;
     height: 15px;
     padding-top: 2px;
+    padding-left: 1px;
     font-size: 9px;
   }
 

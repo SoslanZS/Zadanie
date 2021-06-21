@@ -66,14 +66,13 @@ header{background-color: #fff;}
     align-items: center;
     width: 41px;
     height: 42px;
-    margin-right: auto;
     padding-left: 7px;
     border: none;
     border-radius: 0 5px 5px 0;
     background: #F7F7F7;
     color: #fff;
 
-    svg:nth-child(2){display: none;}
+    svg:last-of-type{display: none;}
     span{display: none;}
 }
 .header__basket-mobile,
@@ -133,6 +132,9 @@ header{background-color: #fff;}
         width: 60px;
         height: 44px;
         padding-left: 0;
+
+        svg:first-of-type{display: none;}
+        svg:last-of-type{display: block;}
     }
     .header__user-content
     {
@@ -149,6 +151,14 @@ header{background-color: #fff;}
             align-items: center;
         }
         li:nth-child(2){margin: 0 20px;}
+        li:not(:last-child) svg{margin-right: 7px;}
+    }
+    .header__basket
+    {
+        margin: 0;
+        margin-right: 7px;
+
+        &:before{padding-right: 1px;}
     }
     .header__user-link
     {
@@ -160,7 +170,6 @@ header{background-color: #fff;}
         margin-left: 6.67px;
     }
     .header__user-link:first-child{margin-left: 10px;}
-    .header__basket{margin: 0;}
 }
 
 @media(min-width: 1366px)
@@ -383,6 +392,7 @@ header{background-color: #fff;}
             width: 15px;
             height: 15px;
             padding-top: 2px;
+            padding-left: 1px;
             font-size: 9px;
         }
     }
