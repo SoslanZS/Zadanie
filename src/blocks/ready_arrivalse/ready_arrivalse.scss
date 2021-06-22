@@ -259,6 +259,7 @@
 	align-items: center;
 	width: 35px;
 	height: 35px;
+	padding-top: 6px;
 	border: 1px solid #EEEEEE;
 	box-sizing: border-box;
 	border-radius: 5px;
@@ -289,7 +290,11 @@
 @media (min-width: 768px)
 {
 	.ready_arrivalse{width: 748px;}
-	.ready_arrivalse__book{width: 185px;}
+	.ready_arrivalse__book
+	{
+		width: 185px;
+		padding-right: 7px;
+	}
 
 	.ready_arrivalse__book-container:nth-child(2),
 	.ready_arrivalse__book-container:nth-child(3){display: block;}
@@ -317,6 +322,7 @@
 			color: #3DC47E;
 		}
 	}
+	.ready_arrivalse__info-book{width: 150px;}
 	.ready_arrivalse__sale
 	{
 		display: flex;
@@ -444,8 +450,8 @@
 	{
 		width: 40px;
 		height: 40px;
-
-		svg{margin-left: 14px;}
+		padding-top: 4px;
+		svg{margin-left: 13px;}
 	}
 	.ready_arrivalse__book-container:first-child
 	{
