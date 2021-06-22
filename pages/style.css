@@ -3121,7 +3121,7 @@ html {
   }
 }
 
-@media (min-width: 1336px) {
+@media (min-width: 1366px) {
   .footer__grey-text {
     display: none;
   }
@@ -3410,194 +3410,6 @@ html {
     margin-right: 30px;
   }
 
-  .email {
-    width: 1140px;
-    height: 105px;
-    margin-bottom: 30px;
-    padding: 32px 44px 33px 45px;
-  }
-
-  .email__header {
-    margin-top: 8px;
-    margin-right: 15px;
-  }
-
-  .email__header span::before {
-    top: -3px;
-  }
-
-  .email__input {
-    width: 418px;
-    height: 40px;
-    margin-right: 10px;
-  }
-
-  .email__btn {
-    width: 137px;
-    height: 40px;
-  }
-
-  .our_capabilities {
-    display: grid;
-    grid-template-areas: 'wotch cards star bag';
-    grid-template-columns: 263px 263px 263px 263px;
-    grid-template-rows: 150px;
-    gap: 30px;
-    width: 1141px;
-    margin-bottom: 30px;
-  }
-
-  .our_capabilities__bloks {
-    width: 263px;
-    height: 150px;
-    margin-bottom: 0;
-  }
-
-  .our_capabilities__text a:first-child {
-    margin-bottom: 3px;
-  }
-
-  .our_capabilities__text a:last-child {
-    display: block;
-    font-size: 12px;
-  }
-
-  .our_capabilities__bloks:first-child {
-    grid-area: wotch;
-    padding-top: 43px;
-    padding-right: 4px;
-    padding-left: 90px;
-  }
-
-  .our_capabilities__wotch-img {
-    width: 122px;
-    height: 75px;
-    top: 37px;
-    left: -13px;
-  }
-
-  .our_capabilities__wotch-img img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .our_capabilities__bloks:nth-child(2) {
-    grid-area: star;
-    padding-top: 43px;
-    padding-left: 89px;
-    padding-right: 8px;
-  }
-
-  .our_capabilities__bloks:nth-child(2) .our_capabilities__text a:last-child {
-    letter-spacing: 0.1px;
-  }
-
-  .our_capabilities__star-img {
-    width: 108px;
-    height: 72px;
-    top: 39px;
-    left: -6px;
-  }
-
-  .our_capabilities__star-img img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .our_capabilities__bloks:nth-child(3) {
-    grid-area: bag;
-    padding-top: 43px;
-    padding-left: 89px;
-  }
-
-  .our_capabilities__bag-img {
-    width: 137px;
-    height: 86px;
-    top: 29px;
-    left: -18px;
-  }
-
-  .our_capabilities__bag-img img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .our_capabilities__bloks:last-child {
-    grid-area: cards;
-    padding-top: 43px;
-    padding-left: 89px;
-    padding-right: 21px;
-  }
-
-  .our_capabilities__cards-img {
-    width: 100px;
-    height: 64px;
-    top: 43px;
-    left: -2px;
-  }
-
-  .our_capabilities__cards-img img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .news {
-    width: 1140px;
-  }
-
-  .news__heading {
-    padding: 0 24px 0 25px;
-  }
-
-  .news__heading h2 {
-    margin-top: 17px;
-  }
-
-  .news__news-container {
-    height: 445px;
-  }
-
-  .news__news-bust {
-    width: 374px;
-    padding: 24px 34px 0 20px;
-    border-right: 1px solid rgba(28, 41, 77, 0.15);
-  }
-
-  .news__news-building {
-    width: 390px;
-    padding: 24px 35px 0;
-    border-right: 1px solid rgba(28, 41, 77, 0.15);
-  }
-
-  .news__news-libra {
-    width: 374px;
-    padding: 24px 20px 0 34px;
-  }
-
-  .news__news-block-building,
-  .news__news-block-libra,
-  .news__news-block-bust {
-    padding: 0;
-    width: 319px;
-  }
-
-  .news__img-bust {
-    width: 319px;
-  }
-
-  .news__img-building,
-  .news__img-libra {
-    width: 320px;
-  }
-
-  .news__news-block-bust p:last-of-type,
-  .news__news-block-building p:last-of-type,
-  .news__news-block-libra p:last-of-type {
-    margin-bottom: 13px;
-  }
-}
-
-@media (min-width: 1366px) {
   .container {
     padding: 0 16px;
     margin-bottom: 30px;
@@ -4351,6 +4163,33 @@ html {
     padding-top: 5px;
   }
 
+  .email {
+    width: 1140px;
+    height: 105px;
+    margin-bottom: 30px;
+    padding: 32px 44px 33px 45px;
+  }
+
+  .email__header {
+    margin-top: 8px;
+    margin-right: 15px;
+  }
+
+  .email__header span::before {
+    top: -3px;
+  }
+
+  .email__input {
+    width: 418px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .email__btn {
+    width: 137px;
+    height: 40px;
+  }
+
   .ready_arrivalse {
     width: 1140px;
     margin-bottom: 30px;
@@ -4599,6 +4438,165 @@ html {
 
   .ready_arrivalse__book-container:last-child .ready_arrivalse__in-garbage {
     padding: 0;
+  }
+
+  .our_capabilities {
+    display: grid;
+    grid-template-areas: 'wotch cards star bag';
+    grid-template-columns: 263px 263px 263px 263px;
+    grid-template-rows: 150px;
+    gap: 30px;
+    width: 1141px;
+    margin-bottom: 30px;
+  }
+
+  .our_capabilities__bloks {
+    width: 263px;
+    height: 150px;
+    margin-bottom: 0;
+  }
+
+  .our_capabilities__text a:first-child {
+    margin-bottom: 3px;
+  }
+
+  .our_capabilities__text a:last-child {
+    display: block;
+    font-size: 12px;
+  }
+
+  .our_capabilities__bloks:first-child {
+    grid-area: wotch;
+    padding-top: 43px;
+    padding-right: 4px;
+    padding-left: 90px;
+  }
+
+  .our_capabilities__wotch-img {
+    width: 122px;
+    height: 75px;
+    top: 37px;
+    left: -13px;
+  }
+
+  .our_capabilities__wotch-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .our_capabilities__bloks:nth-child(2) {
+    grid-area: star;
+    padding-top: 43px;
+    padding-left: 89px;
+    padding-right: 8px;
+  }
+
+  .our_capabilities__bloks:nth-child(2) .our_capabilities__text a:last-child {
+    letter-spacing: 0.1px;
+  }
+
+  .our_capabilities__star-img {
+    width: 108px;
+    height: 72px;
+    top: 39px;
+    left: -6px;
+  }
+
+  .our_capabilities__star-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .our_capabilities__bloks:nth-child(3) {
+    grid-area: bag;
+    padding-top: 43px;
+    padding-left: 89px;
+  }
+
+  .our_capabilities__bag-img {
+    width: 137px;
+    height: 86px;
+    top: 29px;
+    left: -18px;
+  }
+
+  .our_capabilities__bag-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .our_capabilities__bloks:last-child {
+    grid-area: cards;
+    padding-top: 43px;
+    padding-left: 89px;
+    padding-right: 21px;
+  }
+
+  .our_capabilities__cards-img {
+    width: 100px;
+    height: 64px;
+    top: 43px;
+    left: -2px;
+  }
+
+  .our_capabilities__cards-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .news {
+    width: 1140px;
+  }
+
+  .news__heading {
+    padding: 0 24px 0 25px;
+  }
+
+  .news__heading h2 {
+    margin-top: 17px;
+  }
+
+  .news__news-container {
+    height: 445px;
+  }
+
+  .news__news-bust {
+    width: 374px;
+    padding: 24px 34px 0 20px;
+    border-right: 1px solid rgba(28, 41, 77, 0.15);
+  }
+
+  .news__news-building {
+    width: 390px;
+    padding: 24px 35px 0;
+    border-right: 1px solid rgba(28, 41, 77, 0.15);
+  }
+
+  .news__news-libra {
+    width: 374px;
+    padding: 24px 20px 0 34px;
+  }
+
+  .news__news-block-building,
+  .news__news-block-libra,
+  .news__news-block-bust {
+    padding: 0;
+    width: 319px;
+  }
+
+  .news__img-bust {
+    width: 319px;
+  }
+
+  .news__img-building,
+  .news__img-libra {
+    width: 320px;
+  }
+
+  .news__news-block-bust p:last-of-type,
+  .news__news-block-building p:last-of-type,
+  .news__news-block-libra p:last-of-type {
+    margin-bottom: 13px;
   }
 }
 
