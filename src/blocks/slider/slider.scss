@@ -303,8 +303,7 @@
 
 	.slider__header-books-day,
 	.slider__info-books-day,
-	.slider__price-books-day,
-	.slider__in-garbage{width: 200px;}
+	.slider__price-books-day{width: 200px;}
 
 	.slider
 	{
@@ -345,6 +344,7 @@
 		width: 115px;
 		height: 165px;
 	}
+	.slider__in-garbage{width: 150px;}
 	.slider__delivery,
 	.slider__banner-sale
 	{

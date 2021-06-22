@@ -68,6 +68,7 @@ footer .container{padding: 0;}
 	padding-left: 15px;
 	border: none;
 	border: 1px solid  #DFE0E1;
+	border-right: none;
 	border-radius: 5px 0 0 5px;
 	font-family: Roboto;
 	font-weight: normal;
@@ -188,7 +189,7 @@ li.footer__location
 
 @media (min-width: 768px)
 {
-	.footer__link-conteiner{width: 748px;}
+	.footer__link-conteiner{width: auto;}
 	.footer__select
 	{
 		margin: 0;

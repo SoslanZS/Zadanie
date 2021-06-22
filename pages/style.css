@@ -765,6 +765,7 @@ footer .container {
   padding-left: 15px;
   border: none;
   border: 1px solid  #DFE0E1;
+  border-right: none;
   -webkit-border-radius: 5px 0 0 5px;
   border-radius: 5px 0 0 5px;
   font-family: Roboto;
@@ -2565,7 +2566,7 @@ html {
 
 @media (min-width: 768px) {
   .footer__link-conteiner {
-    width: 748px;
+    width: auto;
   }
 
   .footer__select {
@@ -2687,8 +2688,7 @@ html {
 
   .slider__header-books-day,
   .slider__info-books-day,
-  .slider__price-books-day,
-  .slider__in-garbage {
+  .slider__price-books-day {
     width: 200px;
   }
 
@@ -2739,6 +2739,10 @@ html {
   .slider__img-books-day {
     width: 115px;
     height: 165px;
+  }
+
+  .slider__in-garbage {
+    width: 150px;
   }
 
   .slider__delivery,
@@ -3027,7 +3031,7 @@ html {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 768px;
+    width: 748px;
   }
 
   .our_capabilities__bloks:first-child {
