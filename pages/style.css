@@ -1672,7 +1672,7 @@ header {
   margin-bottom: 8px;
   width: 52px;
   height: 25px;
-  background: #FEF6E0;
+  background-color: #FFF1E4;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
@@ -1708,7 +1708,7 @@ header {
 }
 
 .receipts__recommendation svg {
-  margin: 2.88px 6.25px 0 0;
+  margin: 2px 6px 0 0;
 }
 
 .receipts__recommendation a {
@@ -1803,7 +1803,7 @@ header {
   border-radius: 5px;
 }
 
-.receipts__bookmark svg {
+.receipts__bookmark a {
   margin-left: 12px;
   margin-right: 11px;
 }
@@ -2317,7 +2317,7 @@ header {
 }
 
 .our_capabilities__bloks:nth-child(2) {
-  padding-top: 53px;
+  padding-top: 52px;
 }
 
 .our_capabilities__bloks:nth-child(2) .our_capabilities__text a:first-child {
@@ -2331,7 +2331,7 @@ header {
 }
 
 .our_capabilities__bloks:nth-child(3) {
-  padding-top: 53px;
+  padding-top: 52px;
 }
 
 .our_capabilities__bloks:nth-child(3) .our_capabilities__text a:first-child {
@@ -3018,17 +3018,27 @@ html {
   }
 
   .our_capabilities {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    width: 748px;
+    display: grid;
+    grid-template-areas: 'wotch star' 'bag cards';
+    grid-template-columns: 360px 360px;
+    grid-template-rows: 170px 170px;
+    gap: 30px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 768px;
+  }
+
+  .our_capabilities__bloks:first-child {
+    grid-area: wotch;
+    width: auto;
+    margin: 0;
   }
 
   .our_capabilities__bloks:nth-child(2) {
+    grid-area: star;
+    width: auto;
     padding-top: 53px;
   }
 
@@ -3036,7 +3046,14 @@ html {
     top: 40px;
   }
 
+  .our_capabilities__bloks:nth-child(3) {
+    grid-area: bag;
+    width: auto;
+  }
+
   .our_capabilities__bloks:last-child {
+    grid-area: cards;
+    width: auto;
     padding-top: 53px;
   }
 
@@ -3699,10 +3716,12 @@ html {
 
   .header__contact-list li:last-child svg:first-child {
     margin-right: 5px;
+    margin-bottom: 1px;
   }
 
   .header__contact-list li:last-child svg:last-child {
     margin-left: 7px;
+    margin-bottom: 1px;
   }
 
   .header__line {
@@ -3852,7 +3871,6 @@ html {
     width: 15px;
     height: 15px;
     padding-top: 2px;
-    padding-left: 1px;
     font-size: 9px;
   }
 
@@ -4170,7 +4188,7 @@ html {
     padding-top: 4px;
   }
 
-  .receipts__bookmark svg {
+  .receipts__bookmark a {
     margin-left: 13px;
   }
 
@@ -4236,6 +4254,10 @@ html {
 
   .receipts__book-container:nth-child(2) .receipts__star {
     margin-right: 10px;
+  }
+
+  .receipts__book-container:nth-child(2) .receipts__bookmark a {
+    margin-left: 14px;
   }
 
   .receipts__book-container:nth-child(3) {
@@ -4319,6 +4341,10 @@ html {
 
   .receipts__book-container:last-child .receipts__in-garbage {
     padding: 0;
+  }
+
+  .receipts__book-container:last-child .receipts__bookmark {
+    padding-top: 5px;
   }
 
   .ready_arrivalse {

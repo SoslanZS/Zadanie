@@ -173,7 +173,7 @@
 	margin-bottom: 8px;
 	width: 52px;
 	height: 25px;
-	background: #FEF6E0;
+	background-color: #FFF1E4;
 	border-radius: 5px;
 
 	a
@@ -201,7 +201,7 @@
 	background-color: #EBEDF7;
 	border-radius: 5px;
 
-	svg{margin: 2.88px 6.25px 0 0;}
+	svg{margin: 2px 6px 0 0;}
 
 	a
 	{
@@ -264,7 +264,7 @@
 	box-sizing: border-box;
 	border-radius: 5px;
 
-	svg
+	a
 	{
 		margin-left: 12px;
 		margin-right: 11px;
@@ -451,7 +451,7 @@
 		width: 40px;
 		height: 40px;
 		padding-top: 4px;
-		svg{margin-left: 13px;}
+		a{margin-left: 13px;}
 	}
 	.receipts__book-container:first-child
 	{
@@ -502,6 +502,7 @@
 		.receipts__info-book{margin-bottom: 7px;}
 		.receipts__in-garbage svg{margin-left: 24.67px;}
 		.receipts__star{margin-right: 10px;}
+		.receipts__bookmark a {margin-left: 14px;}
 	}
 	.receipts__book-container:nth-child(3)
 	{
@@ -575,5 +576,6 @@
 		.receipts__rating{margin-bottom: 12px;}
 		.receipts__recommendation{display: flex;}
 		.receipts__in-garbage{padding: 0;}
+		.receipts__bookmark{padding-top: 5px;}
 	}
 }
