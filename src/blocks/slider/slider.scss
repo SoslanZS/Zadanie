@@ -10,7 +10,23 @@
 	width: 355px;
 	height: 175px;
 	border-radius: 5px;
+}
+.slider__slider-scroll
+{
+	height: 100%;
+	overflow: scroll;
+	border-radius: 5px;
+}
+.slider__slider-list
+{
+	display: flex;
+	width: 10000px;
 
+	li
+	{
+		width: 750px;
+		height: 350px;
+	}
 	img
 	{
 		width: 100%;
@@ -429,6 +445,7 @@
 		width: 40px;
 		height: 40px;
 		background-color: #F7FFEE;
+		border: none;
 		border-radius: 5px;
 	}
 	.slider__arrow-left{left: 27px;}

@@ -1100,7 +1100,27 @@ header {
   border-radius: 5px;
 }
 
-.slider__slider img {
+.slider__slider-scroll {
+  height: 100%;
+  overflow: scroll;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.slider__slider-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10000px;
+}
+
+.slider__slider-list li {
+  width: 750px;
+  height: 350px;
+}
+
+.slider__slider-list img {
   width: 100%;
   height: 100%;
 }
@@ -3783,6 +3803,7 @@ html {
     width: 40px;
     height: 40px;
     background-color: #F7FFEE;
+    border: none;
     -webkit-border-radius: 5px;
     border-radius: 5px;
   }

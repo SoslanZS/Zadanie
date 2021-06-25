@@ -1,15 +1,24 @@
 <div class="container">
 	<div class="slider">
-		<section class="slider__slider">
-				<img src="img/2=3.png" alt="">
-				<div class="slider__arrow-left">{% include "assets/svg/arrow-left.svg" %}</div>
-				<div class="slider__arrow-rigth">{% include "assets/svg/arrow-rigth.svg" %}</div>
-				<div class="slider__tots">
-					<div class="slider__tots-line slider__tots--active"></div>
-					<div class="slider__tots-line"></div>
-					<div class="slider__tots-line"></div>
-					<div class="slider__tots-line"></div>
-				</div>
+		<section class="slider__slider _slider">
+			<div class="slider__slider-scroll">
+				<ul class="slider__slider-list _slider-list">
+					<li><img src="img/2=3.png" alt=""></li>
+					<li><img src="img/1.png" alt=""></li>
+					<li><img src="img/2.png" alt=""></li>
+					<li><img src="img/3.png" alt=""></li>
+					<li><img src="img/4.png" alt=""></li>
+					<li><img src="img/5.png" alt=""></li>
+				</ul>
+			</div>
+			<button class="slider__arrow-left _slider-btn" data-dir="back" onclick="o2.slider.slideTo(this)">{% include "assets/svg/arrow-left.svg" %}</button>
+			<button class="slider__arrow-rigth _slider-btn" data-dir="next" onclick="o2.slider.slideTo(this)">{% include "assets/svg/arrow-rigth.svg" %}</button>
+			<div class="slider__tots">
+				<div class="slider__tots-line slider__tots--active"></div>
+				<div class="slider__tots-line"></div>
+				<div class="slider__tots-line"></div>
+				<div class="slider__tots-line"></div>
+			</div>
 		</section>
 
 		<section class="slider__books-day">
@@ -59,6 +68,5 @@
 				</a>
 			</div>
 		</section>
-
 	</div>
 </div>
