@@ -1102,7 +1102,7 @@ header {
 
 .slider__slider-scroll {
   height: 100%;
-  overflow: scroll;
+  overflow: hidden;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
@@ -1112,12 +1112,13 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
   width: 10000px;
 }
 
 .slider__slider-list li {
-  width: 750px;
-  height: 350px;
+  width: 355px;
+  height: 100%;
 }
 
 .slider__slider-list img {
@@ -2733,6 +2734,10 @@ html {
     grid-area: slider;
   }
 
+  .slider__slider-list li {
+    width: 500px;
+  }
+
   .slider__tots {
     top: 260px;
   }
@@ -3778,6 +3783,10 @@ html {
     gap: 30px;
     width: 1140px;
     margin-bottom: 30px;
+  }
+
+  .slider__slider-list li {
+    width: 750px;
   }
 
   .slider__tots {
