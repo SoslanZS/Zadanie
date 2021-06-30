@@ -304,17 +304,18 @@
 	font-weight: normal;
 	font-size: 20px;
 	line-height: 25px;
-}
-.slider__banner-text::before
-{
-	content: '';
-	position: absolute;
-	top: 50px;
-	left: 20px;
-	z-index: -1;
-	width: 67px;
-	height: 27px;
-	background-image: url('img/tape-banner.png');
+
+	&::before
+	{
+		content: '';
+		position: absolute;
+		top: 50px;
+		left: 20px;
+		z-index: -1;
+		width: 67px;
+		height: 27px;
+		background-image: url('img/tape-banner.png');
+	}
 }
 .slider__banner-img
 {
@@ -525,7 +526,7 @@
 	}
 
 	.slider__banner-text
-	{;
+	{
 		width: 199px;
 		height: 75px;
 		font-size: 20px;
@@ -541,17 +542,6 @@
 		width: 97.78px;
 		height: 100px;
 		margin: 0;
-	}
-	.slider__banner-text
-	{
-		width: 199px;
-		height: 75px;
-		font-size: 20px;
-	}
-	.slider__banner-text::before
-	{
-		top: 50px;
-		left: 20px;
 	}
 	.slider__banner-img
 	{

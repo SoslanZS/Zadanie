@@ -3923,17 +3923,6 @@ html {
     margin: 0;
   }
 
-  .slider__banner-text {
-    width: 199px;
-    height: 75px;
-    font-size: 20px;
-  }
-
-  .slider__banner-text::before {
-    top: 50px;
-    left: 20px;
-  }
-
   .slider__banner-img {
     width: 134px;
     height: 102px;
