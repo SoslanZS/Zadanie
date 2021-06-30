@@ -5,7 +5,6 @@ let sliderUl = $('._slider-list'),
 	index = 0,
 	loc = 0;
 	locL = 0;
-
 function sliderRight(value)
 {
 	index++;
