@@ -50,6 +50,7 @@
 }
 .slider__arrow-left{left: 27px;}
 .slider__arrow-rigth{right: 28px;}
+
 .slider__tots
 {
 	display: flex;
@@ -422,12 +423,14 @@
 		width: auto;
 		height: 75px;
 		font-size: 16px;
+
+		&::before
+		{
+			top: 26px;
+			left: 139px;
+		}
 	}
-	.slider__banner-text::before
-	{
-		top: 26px;
-		left: 139px;
-	}
+
 	.slider__banner-img
 	{
 		width: 92px;
@@ -473,6 +476,7 @@
 		height: 250px;
 		margin-right: 77px;
 		margin-left: 76px;
+
 		img{border-radius: 0;}
 	}
 	.slider__info-books-day
@@ -516,18 +520,21 @@
 		width: 199px;
 		height: 75px;
 		font-size: 20px;
+
+		&::before{left: -12px;}
 	}
-	.slider__delivery-text::before{left: -12px;}
+
 	.slider__banner-text
 	{;
 		width: 199px;
 		height: 75px;
 		font-size: 20px;
-	}
-	.slider__banner-text::before
-	{
-		top: 50px;
-		left: 20px;
+
+		&::before
+		{
+			top: 50px;
+			left: 20px;
+		}
 	}
 	.slider__delivery-img
 	{
@@ -552,5 +559,4 @@
 		height: 102px;
 		margin: 0;
 	}
-	transform: translateX(10px);
 }
