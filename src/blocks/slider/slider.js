@@ -30,6 +30,6 @@ function sliderLeft(value)
 	}
 
 	sliderUl.animate({
-		'margin-left':'-'+loc+'px'
+		'margin-left':`-${loc}px`
 	},500)
 }
