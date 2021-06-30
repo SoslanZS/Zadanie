@@ -1,10 +1,10 @@
 let sliderUl = $('._slider-list'),
 	sliderImg = sliderUl.find('img'),
 	imgWidth = sliderImg[0].width,
-	imgLenght = sliderImg.length , //6
+	imgLenght = sliderImg.length,
 	index = 0,
 	loc = 0;
-	locL = 0;
+
 function sliderRight(value)
 {
 	index++;
