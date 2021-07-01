@@ -1173,22 +1173,27 @@ header {
   height: 2px;
 }
 
-.slider__dots-active {
-  position: absolute;
-  margin: 0;
-  background-color: #fff !important;
-}
-
 .slider__dots-line {
   width: 25px;
   height: 100%;
   background: rgba(255, 255, 255, 0.5);
   -webkit-border-radius: 2px;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .slider__dots-line:not(:last-child) {
   margin-right: 5px;
+}
+
+.slider__dots-active {
+  position: absolute;
+  margin: 0;
+  width: 25px;
+  height: 100%;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #fff !important;
 }
 
 .slider__books-day {
