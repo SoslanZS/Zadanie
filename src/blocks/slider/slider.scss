@@ -63,6 +63,15 @@
 	margin: auto;
 	height: 2px;
 
+	&-active
+	{
+		position: absolute;
+		margin: 0;
+		width: 25px;
+		height: 100%;
+		border-radius: 2px;
+		background-color: #fff !important;
+	}
 }
 .slider__dots-line
 {
@@ -72,15 +81,6 @@
 	border-radius: 2px;
 	cursor: pointer;
 	&:not(:last-child){margin-right: 5px;}
-}
-.slider__dots-active
-{
-	position: absolute;
-	margin: 0;
-	width: 25px;
-	height: 100%;
-	border-radius: 2px;
-	background-color: #fff !important;
 }
 .slider__books-day
 {
