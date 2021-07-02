@@ -1,86 +1,90 @@
-let sliderUl = $('._slider-list'),
-	sliderImg = sliderUl.find('img'),
-	imgWidth = sliderImg[0].width,
-	imgLenght = sliderImg.length,
-	sliderDots = addElement('._slider__dots', '<div class="slider__dots-line _slider__dots-line" onclick="dotsClick(this)">', imgLenght),
-	dots = $(checkChildren(sliderDots,'div')[0]).append('<div class="slider__dots-active _slider__dots-active">'),
-	dotsActive = $('._slider__dots-active'),
-	dotsWidth = dotsActive.width() + 5,
-	index = 0,
-	locUl = 0,
-	locDots = 0;
-
-
-function sliderRight(value)
+o2.slider =
 {
-	index++;
-	locUl += imgWidth;
-	locDots += dotsWidth;
-	if(index === imgLenght)
+	sliderUl : $('._slider-list'),
+	sliderImg : [],
+	imgWidth : 0,
+	imgLenght : 0,
+	sliderDots : [],
+	dots : [],
+	dotsActive : '',
+	dotsWidth: 0,
+	index : 0,
+	locUl : 0,
+	locDots : 0,
+	init()
 	{
-		index = 0;
-		locUl = 0;
-		locDots = 0;
-	}
+		this.sliderImg = this.sliderUl.find('img');
+		this.imgWidth = this.sliderImg[0].width;
+		this.imgLenght = this.sliderImg.length;
+		this.sliderDots = this.addElement('._slider__dots', '<div class="slider__dots-line _slider__dots-line" onclick="o2.slider.dotsClick(this)">', this.imgLenght);
+		this.dots = $(this.checkChildren(this.sliderDots,'div')[0]).append('<div class="slider__dots-active _slider__dots-active">');
+		this.dotsActive = $('._slider__dots-active'),
+		this.dotsWidth =this.dotsActive.width() + 5;
+	},
+	sliderRight(value)
+	{
+		this.index++;
+		this.locUl += this.imgWidth;
+		this.locDots += this.dotsWidth;
+		if(this.index === this.imgLenght)
+		{
+			this.index = 0;
+			this.locUl = 0;
+			this.locDots = 0;
+		}
+		this.sliderMovement();
+	},
+	sliderLeft(value)
+	{
+		this.index--;
+		this.locUl -= this.imgWidth;
+		this.locDots -= this.dotsWidth;
+		if(this.index < 0)
+		{
+			this.index = this.imgLenght - 1;
+			this.locUl = this.imgWidth * (this.imgLenght - 1);
+			this.locDots = this.dotsWidth * (this.imgLenght - 1);
+		}
 
+		this.sliderMovement()
+	},
+	dotsClick(value)
+	{
+		let imgWidthDots = this.sliderImg[0].width,
+		dotsWidthDots = this.dotsActive.width() + 5,
+		dots = $(value).data('num');
+		this.index = dots;
+		this.locUl = imgWidthDots * dots;
+		this.locDots = this.dotsWidth * dots;
+
+		this.sliderMovement()
+	},
 	sliderMovement()
-}
-
-function sliderLeft(value)
-{
-	index--;
-	locUl -= imgWidth;
-	locDots -= dotsWidth;
-	if(index < 0)
 	{
-		index = imgLenght - 1;
-		locUl = imgWidth * (imgLenght - 1);
-		locDots = dotsWidth * (imgLenght - 1);
-	}
-
-	sliderMovement()
-}
-
-function dotsClick(value)
-{
-	let imgWidthDots = sliderImg[0].width,
-	dotsWidthDots = dotsActive.width() + 5,
-	dots = $(value).data('num');
-	index = dots;
-	console.log(dots);
-	locUl = imgWidthDots * dots;
-	locDots = dotsWidth * dots;
-
-	sliderMovement()
-}
-
-function sliderMovement()
-{
-	sliderUl.animate({
-		'margin-left':`-${locUl}px`
-	}, 500)
-	dotsActive.animate({
-		'margin-left':`${locDots}px`
-	}, 500)
-}
-
-function addElement(parent,clas,length)
-{
-	let element = $(parent);
-	for(let i = 0; i < length; i++)
+		this.sliderUl.animate({
+			'margin-left':`-${this.locUl}px`
+		}, 500)
+		this.dotsActive.animate({
+			'margin-left':`${this.locDots}px`
+		}, 500)
+	},
+	addElement(parent,clas,length)
 	{
-		element.append(clas);
-	}
+		let element = $(parent);
+		for(let i = 0; i < length; i++)
+		{
+			element.append(clas);
+		}
 
-	let data = element.children();
-	for(let i = 0; i < length; i++)
+		let data = element.children();
+		for(let i = 0; i < length; i++)
+		{
+			$(data[i]).attr('data-num', `${i}`);
+		}
+		return element;
+	},
+	checkChildren(parent, children)
 	{
-		$(data[i]).attr('data-num', `${i}`);
+		return $(parent).find(children);
 	}
-	return element;
-}
-
-function checkChildren(parent, children)
-{
-	return $(parent).find(children);
 }
