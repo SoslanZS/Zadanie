@@ -1184,12 +1184,24 @@ header {
 }
 
 .slider__dots-line {
+  position: relative;
   width: 25px;
   height: 100%;
   background: rgba(255, 255, 255, 0.5);
   -webkit-border-radius: 2px;
   border-radius: 2px;
   cursor: pointer;
+}
+
+.slider__dots-line:first-child::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -40px;
+  left: -13px;
+  width: 50px;
+  height: 30px;
+  background-color: red;
 }
 
 .slider__dots-line:not(:last-child) {
