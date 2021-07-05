@@ -1128,10 +1128,7 @@ header {
 
 .slider__arrow-left,
 .slider__arrow-rigth {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   position: absolute;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1148,6 +1145,14 @@ header {
   border: none;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+}
+
+.slider__slider:hover .slider__arrow-left,
+.slider__slider:hover .slider__arrow-rigth {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .slider__arrow-left {
