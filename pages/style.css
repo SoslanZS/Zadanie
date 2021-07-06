@@ -1092,6 +1092,7 @@ header {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  z-index: 1;
   margin: auto;
   margin-bottom: 10px;
   width: 355px;
@@ -1128,7 +1129,10 @@ header {
 
 .slider__arrow-left,
 .slider__arrow-rigth {
-  display: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1147,14 +1151,6 @@ header {
   border-radius: 5px;
 }
 
-.slider__slider:hover .slider__arrow-left,
-.slider__slider:hover .slider__arrow-rigth {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .slider__arrow-left {
   left: 27px;
 }
@@ -1171,15 +1167,17 @@ header {
   justify-content: space-between;
   wrap: no-wrap;
   position: absolute;
+  z-index: 1;
   top: 163px;
   right: 0;
   left: 0;
   margin: auto;
-  height: 2px;
+  height: 4px;
 }
 
 .slider__dots-active {
   position: absolute;
+  z-index: -1;
   margin: 0;
   width: 25px;
   height: 100%;
@@ -1189,6 +1187,7 @@ header {
 }
 
 .slider__dots-line {
+  position: relative;
   width: 25px;
   height: 100%;
   background: rgba(255, 255, 255, 0.5);
@@ -1199,6 +1198,27 @@ header {
 
 .slider__dots-line:not(:last-child) {
   margin-right: 5px;
+}
+
+.slider__dots-preview {
+  display: block;
+  position: absolute;
+  top: -67px;
+  left: -30px;
+  width: 0px;
+  height: 0px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 9px #888;
+  box-shadow: 0 0 9px #888;
+}
+
+.slider__dots-preview img {
+  width: 100%;
+  height: 100%;
 }
 
 .slider__books-day {
